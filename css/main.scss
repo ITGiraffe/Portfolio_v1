@@ -48,7 +48,7 @@ header{
     }
 }
 
-.social-header, .hero-design{
+.social-header, .hero-design, .hero-design2{
     display: none;
 }
 
@@ -57,12 +57,12 @@ header{
     color: white;
     display: grid;
     text-align: center;
-    padding: 4em;   
+    padding: 2em;   
 }
 
 .university{
     margin: 0 auto;
-    width: 450px;
+    width: 300px;
     font-weight: bold;
     color: #FF64CB;
 }
@@ -125,25 +125,9 @@ section{
     padding: .2em 1em;
 }
 
-.right, .left{
+.left{
     margin: 1em;
     border-radius: 1em;
-}
-
-.proj2{
-    position: relative;
-}
-.proj2::before{
-    
-    content: "";
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: #E5D5FA;
-    top: -2ch;
-    right: -10ch;
-    z-index: -1;
 }
 
 .skills{
@@ -184,8 +168,6 @@ section{
     }
 
     .contact-center{
-        display: flex;
-        justify-content: space-between;
         padding: 0 1em;
     }
 
@@ -194,16 +176,16 @@ section{
     }
 
     .input-name{
-        text-align: right;
-        width: 70px;
+        text-align: left;
+        width: 90px;
         margin: .5em 0;
     }
 
     input{
         background-color: #f8f1f1;
-        margin: .5em 1em;
+        margin: .5em 0;
         border-radius: 1em;
-        width: 250px;
+        width: 200px;
     }
 
     input:focus{
@@ -214,7 +196,7 @@ section{
         background-color: #f8f1f1;
         margin: 0 1em;
         border-radius: 1em;
-        width: 400px;
+        width: 250px;
         height: 140px;
     }
 
@@ -225,12 +207,12 @@ section{
     .center-right{
         background: #FF64CB;
         color: #6200E3;
-        width: 130px;
+        width: 120px;
         height: 80px;
         border-radius: 1em;
         font-size: 2em;
         font-weight: 700;
-        margin: auto 0 auto .2em;
+        margin: auto;
     }
 
     textarea:focus{
@@ -243,6 +225,47 @@ footer{
 
     .footer-link{
         color: white;
+    }
+}
+
+@media only screen and (min-width: 800px){
+
+    .proj1::before{
+        width: 230px;
+        height: 230px;
+        top: -3ch;
+        left: -13ch;
+    }
+
+    .university{
+        text-align: left;
+        width: 480px;
+    }
+
+    .subtitle{
+        text-align: left;
+    }
+
+    .skills{
+        margin-top: -5em;
+        padding-top: 6em;
+    }
+
+    .skills-container ul{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 1em;
+    }
+
+    .contact{
+
+        input{
+            width: 350px;
+        }
+
+        .contact-message{
+            width: 500px;
+        }
     }
 }
 
