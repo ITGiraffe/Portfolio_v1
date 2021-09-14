@@ -62,7 +62,7 @@ header{
 
 .university{
     margin: 0 auto;
-    width: 300px;
+    width: 80%;
     font-weight: bold;
     color: #FF64CB;
 }
@@ -185,7 +185,7 @@ section{
         background-color: #f8f1f1;
         margin: .5em 0;
         border-radius: 1em;
-        width: 200px;
+        width: 50%;
     }
 
     input:focus{
@@ -196,7 +196,7 @@ section{
         background-color: #f8f1f1;
         margin: 0 1em;
         border-radius: 1em;
-        width: 250px;
+        width: 70%;
         height: 140px;
     }
 
@@ -239,7 +239,6 @@ footer{
 
     .university{
         text-align: left;
-        width: 480px;
     }
 
     .subtitle{
@@ -257,15 +256,154 @@ footer{
         grid-gap: 1em;
     }
 
-    .contact{
+    .view-code{
+        text-align: left;
+    }
 
-        input{
-            width: 350px;
-        }
 
-        .contact-message{
-            width: 500px;
+}
+
+@media only screen and (min-width: 1050px){
+
+    .hero{
+        height: 90vh;
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: unset;
+        padding: 0;
+
+        .content{
+            background: #6200E3;
+            padding: 6em 8em 6em 4em;
+            text-align: left;
+
+            h1{
+                font-size: 2.5em;
+                line-height: 1.2em;
+            }
         }
+    }
+
+    .nav-container{
+
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: unset;
+
+        header{
+            background: #6E00FF;
+        }
+    }
+
+    header{
+        padding: 2.9em 2em 2em 4em;
+    }
+
+    .social-header{
+
+        padding: 2.5em 4em 0 0;
+    }
+
+    section{
+
+        padding: 2em 3em 2em 3em;
+    }
+
+    .social-header{
+
+        display: block;
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            width: 12em;
+            float: right;
+
+            img{
+                width: 70px;
+                margin-bottom: 1em;
+            }
+
+            .linked{
+                margin-top: .60em;
+            }
+        }
+    }
+
+    .university{
+        margin: unset;
+    }
+
+    .hero-design{
+        display: block;
+        margin-left: -75%;
+        margin-top: 25%;
+        width: 150%;
+    }
+
+    .projects{
+        text-align: left;
+    }
+
+    .proj1{
+
+        display: grid;
+        grid-template-columns: 55% auto;
+    }
+
+    .left{
+        display: grid;
+        place-content: center;
+    }
+
+    .right{
+        margin-left: 2em;
+        margin-top: 3em;
+    }
+
+    .proj1::before{
+        top: 1ch;
+    }
+
+    .skills-container ul{
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-gap: 1em;
+    }
+}
+
+@media only screen and (min-width: 1050px){
+
+    .proj1::before{
+        top: 5ch;
+    }
+
+    section{
+
+        padding: 0 3em 2em 3em;
+    }
+}
+
+@media only screen and (min-width: 1550px){
+
+    section{
+
+        padding: 0 3em 2em 3em;
+    }
+
+    .proj1::before{
+        top: 7ch;
+    }
+
+    section{
+
+        padding: 0 3em 2em 3em;
+    }
+
+    .skills-container ul{
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-gap: 4em;
     }
 }
 
