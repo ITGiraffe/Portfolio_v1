@@ -407,6 +407,18 @@ footer{
     }
 }
 
+.circle{
+    animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@keyframes circleAnim {
+    from{
+        transform: translate(262px, 795px);
+    }
+    to{
+        transform: translate(262px, 832px);
+    }
+}
 
 
 

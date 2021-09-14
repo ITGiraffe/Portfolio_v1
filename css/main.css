@@ -390,4 +390,30 @@ footer .footer-link {
     grid-gap: 4em;
   }
 }
+
+.circle {
+  animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@-webkit-keyframes circleAnim {
+  from {
+    -webkit-transform: translate(262px, 795px);
+            transform: translate(262px, 795px);
+  }
+  to {
+    -webkit-transform: translate(262px, 832px);
+            transform: translate(262px, 832px);
+  }
+}
+
+@keyframes circleAnim {
+  from {
+    -webkit-transform: translate(262px, 795px);
+            transform: translate(262px, 795px);
+  }
+  to {
+    -webkit-transform: translate(262px, 832px);
+            transform: translate(262px, 832px);
+  }
+}
 /*# sourceMappingURL=main.css.map */

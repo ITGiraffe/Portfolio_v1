@@ -1,18 +1,11 @@
-<svg width="73" height="119" viewBox="0 0 73 119" fill="none" >
-<g filter="url(#filter0_i)">
-<path d="M68.3792 59.5C68.3792 75.4617 65.9396 89.354 60.7101 99.0899C55.6339 108.541 48.0331 114 36.8792 114C25.7252 114 18.1244 108.541 13.0482 99.0899C7.81868 89.354 5.37915 75.4617 5.37915 59.5C5.37915 43.6581 8.28156 29.753 13.7592 19.981C19.1446 10.3736 26.8128 5 36.8792 5C46.9455 5 54.6137 10.3736 59.9991 19.981C65.4767 29.753 68.3792 43.6581 68.3792 59.5Z" stroke="white" stroke-width="9"/>
-</g>
-<ellipse rx="17" ry="17.5" transform="matrix(-1 0 0 1 37 41.5)" fill="white"/>
-<defs>
-<filter id="filter0_i" x="0.87915" y="0.5" width="72" height="122" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="2"/>
-<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
-</filter>
-</defs>
-</svg>
+<svg class="scroll stagger1" width="40" height="77" viewBox="0 0 40 77">
+    <g id="scroll" transform="translate(-253 -787)">
+        <g id="Rectangle_12" data-name="Rectangle 12" transform="translate(253 787)" fill="none" stroke="#fff"
+            stroke-width="4">
+            <rect width="40" height="77" rx="20" stroke="none" />
+            <rect x="2" y="2" width="36" height="73" rx="18" fill="none" />
+        </g>
+    <circle class="circle" id="Ellipse_1" data-name="Ellipse 1" cx="11" cy="11" r="11" transform="translate(262 798)"
+        fill="#fff" />
+    </g>
+    </svg>
