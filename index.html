@@ -10,8 +10,10 @@
 </head>
 
 <body>
+    
+<a href="#top" class="up_image"><img src="Images/up.png" alt="GitHub"></a>
 
-    <div class="nav-container">
+<div id="top" class="nav-container">
     
         <header>
             <a href="Home" class="logo">Mariusz Cichon</a>
@@ -19,18 +21,19 @@
             <nav>
     
                 <ul>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Contact me</a></li>
+                    <li><a href="#section1">Projects</a></li>
+                    <li><a href="#section2">Skills</a></li>
+                    <li><a href="#section3">Contact me</a></li>
                 </ul>
             </nav>
         </header>
         <div class="social-header">
             <ul>
                 <span class="linked">
-                <li><a href="#"><img src="Images/Github_logo.png" alt="GitHub"></a></li>
+                <li><a href="https://github.com/ITGiraffe" target="_blank"><img src="Images/Github_logo.png" alt="GitHub"></a></li>
             </span>
-                    <li><a href="#"><img src="Images/Linkedin_logo.png" alt="LinkedIn"></a></li>
+                    <li><a href="https://www.linkedin.com/in/mariusz-cichon-6895311b6/" target="_blank"><img src="Images/Linkedin_logo.png"
+                                alt="LinkedIn"></a></li>
             </ul>
         </div>
     </div>
@@ -179,7 +182,7 @@
             </defs>
         </svg>
     </div>
-    <section class="projects">
+    <section id="section1" class="projects">
         <div class="proj1">
             <div class="left">
                 <div class="inner transition2">
@@ -189,7 +192,7 @@
                         Java. Project had applied user experience UX principles and implemetation of features and widgets,
                         for instance: RecyclerView. Use of firebase database. </p>
                 </div>
-                <a href="#" class="view-code">View code</a>
+                <a href="https://github.com/ITGiraffe/RoehamtopRoomApp" class="view-code" target="_blank">View code</a>
             </div class="end">
             <img class="right transition2" src="Images/RoehamptonRoomApp_project.png" alt="RoehamptonRoomApp project">
         </div>
@@ -202,8 +205,8 @@
                         and basket with prices. Technologies used: MySQL, SQL, HTML5, CSS3, Javascript as Front-End, and PHP
                         fas Back-End.</p>
                 </div>
-                <a href="#" class="view-code">View code</a>
-                <a href="#" class="view-code">Visit site</a>
+                <a href="https://github.com/ITGiraffe/Organicfarm_assignment" class="view-code" target="_blank">View code</a>
+                <!-- <a href="#" class="view-code">Visit site</a> -->
             </div class="end">
             <img class="right transition2" src="Images/Organic_farm_project.png" alt="OrganicFarm project">
         </div>
@@ -215,13 +218,13 @@
                         removing empleyees with a main purpose of generating payslips dependent of their contract type. This
                         project presneting and focusing on knowledge of OOP principles; therefore, GUI is skipped.</p>
                 </div>
-                <a href="#" class="view-code">View code</a>
+                <a href="https://github.com/ITGiraffe/Payroll_System" class="view-code" target="_blank">View code</a>
             </div class="end">
             <img class="right transition3" src="Images/Payroll_system_project.png" alt="Payroll_system project">
         </div>
     </section>
     
-    <section class="skills">
+    <section id="section2" class="skills">
         <div class="skills-container">
             <ul>
                 <li class="transition4">
@@ -278,38 +281,38 @@
             </ul>
         </div>
     </section>
-    <section class="contact">
+    <section id="section3" class="contact">
         <div class="contact-top transition5">
             <p class="bold-title">Like what you see?</p>
             <p class="project-title">Contact me:</p>
         </div>
-        <form action="#">
+        <form action="https://formspree.io/f/mwkaylek" method="POST">
             <div class="contact-center transition5">
                 <div class="center-left">
                     <div class="center-left2">
                         <div class="input-name">Name:</div>
-                        <input type="text" placeholder="Name">
+                        <input type="text" name="name" placeholder="Name" required>
                     </div>
                     <div class="center-left2">
                         <div class="input-name">Email:</div>
-                        <input type="email" placeholder="Email">
+                        <input type="email" name="_replyto" placeholder="Email" required>
                     </div>
                     <div class="center-left2">
                         <div class="input-name">Subject:</div>
-                        <input type="text" placeholder="Subject">
+                        <input type="text" name="subject" placeholder="Subject">
                     </div>
                 </div>
             </div>
             <div class="contact-bottom transition5">
                 <div class="center-left2">
                     <div class="input-name">Message:</div>
-                    <textarea type="text" class="contact-message" placeholder="Message"></textarea>
+                    <textarea type="text" name="message" class="contact-message" placeholder="Message" required></textarea>
                 </div>
             </div>
-            <button class="center-right">Send</button>
+            <button type="submit" class="center-right" value="Send">Send</button>
         </form>
     </section>
-    <footer class="content transition5">
+    <footer class="content">
         <div class="footer-left">
             <header>
                 <a href="Home" class="logo">Mariusz Cichon</a>
@@ -317,9 +320,9 @@
                 <nav>
     
                     <ul>
-                        <li><a href="#" class="footer-link">Projects</a></li>
-                        <li><a href="#" class="footer-link">Skills</a></li>
-                        <li><a href="#" class="footer-link">Contact me</a></li>
+                        <li><a href="#section1" class="footer-link">Projects</a></li>
+                        <li><a href="#section2" class="footer-link">Skills</a></li>
+                        <li><a href="#section3" class="footer-link">Contact me</a></li>
                     </ul>
                 </nav>
             </header>
@@ -405,8 +408,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"
     integrity="sha512-DlTk2PLUinhBupE89kHOJTt11QqbRMQVlbb26XVDvp4D1kt0fRvQJslvZnTelRJHq6yK0tIPCR7cul8+9Blz0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script>
+
+                                        $(window).scroll(function () {
+                                            if ($(this).scrollTop() > 300) $('.up_image').fadeIn();
+                                            else $('.up_image').fadeOut();
+                                        });
 
     gsap.registerPlugin(ScrollTrigger);
     var tl = gsap.timeline();
@@ -482,6 +491,19 @@
         duration: 1.8,
         stagger: .3
     })
+
+    $(function () {
+        $('a[href*=\\#]:not([href=\\#])').on('click', function () {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.substr(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        });
+    });
 </script>
 </body>
 </html>

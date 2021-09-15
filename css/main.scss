@@ -20,6 +20,17 @@ img{
     width: 100%;
 }
 
+.up_image{
+    width: 50px;
+    height: 50px;
+    right: 30px;
+    bottom: 60px;
+    position: fixed;
+    z-index: 1;
+    display: none;
+
+}
+
 .nav-container{
     background: #6E00FF;
 
@@ -221,7 +232,7 @@ section{
 }
 
 footer{
-    background-color: #6200E3;
+    background-color: #6E00FF;
 
     .footer-link{
         color: white;
@@ -296,12 +307,29 @@ footer{
     }
 
     header{
-        padding: 2.9em 2em 2em 4em;
+        padding: 1em 1em 1em 3em;
+    }
+
+    header, footer{
+
+        a{
+            padding: 1em;
+        }
+
+        a:hover{
+            background-color: #6200E3;
+            letter-spacing: .1em;
+            border-radius: 25%;
+        }
+
+        ul a{
+            padding: 1em;
+        }
     }
 
     .social-header{
 
-        padding: 2.5em 4em 0 0;
+        padding: 1.6em 4em 0 0;
     }
 
     section{
@@ -343,6 +371,18 @@ footer{
 
     .projects{
         text-align: left;
+
+        a.view-code{
+            margin-top: 1em;
+
+        }
+
+        a.view-code:hover{
+            letter-spacing: .3em;
+            width: 20%;
+            background-color: #E5D5FA;
+            border-radius: 20%;
+        }
     }
 
     .proj1{
@@ -372,7 +412,7 @@ footer{
     }
 }
 
-@media only screen and (min-width: 1050px){
+@media only screen and (min-width: 1200px){
 
     .proj1::before{
         top: 5ch;
